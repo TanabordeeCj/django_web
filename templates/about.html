@@ -1,5 +1,79 @@
 {% extends "base.html" %}
 
-{% block contact %}
+{% block contant %}
+<style>
+    .container {
+        text-align: center;
+        padding: 5%;
+        background-color: #f0f8ff;
+    }
 
-{% endblock contact %}
+    .container h1 {
+        font-size: 2.5vw;
+        color: #2c3e50;
+        margin-bottom: 0.5em;
+    }
+
+    .container h2 {
+        font-size: 2vw;
+        color: #2980b9;
+        margin-bottom: 0.5em;
+    }
+
+    .container h4 {
+        font-size: 1.5vw;
+        color: #34495e;
+        margin-bottom: 0.5em;
+    }
+
+    .container p {
+        font-size: 1.2vw;
+        color: #7f8c8d;
+        margin-top: 1em;
+    }
+
+    /* Media queries for smaller screens */
+    @media (max-width: 768px) {
+        .container h1 {
+            font-size: 4vw;
+        }
+
+        .container h2 {
+            font-size: 3vw;
+        }
+
+        .container h4 {
+            font-size: 2.5vw;
+        }
+
+        .container p {
+            font-size: 2vw;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container h1 {
+            font-size: 6vw;
+        }
+
+        .container h2 {
+            font-size: 5vw;
+        }
+
+        .container h4 {
+            font-size: 4vw;
+        }
+
+        .container p {
+            font-size: 3.5vw;
+        }
+    }
+</style>
+
+<div class="container">
+    <h1>เกี่ยวกับฉัน</h1>
+    <h2>Tanabordee CJ</h2>
+    <h4>สาขา: วิทยาการคอมพิวเตอร์</h4>
+    <p>นักวิทยาการคอมพิวเตอร์ผู้มีความมุ่งมั่นในการใช้เทคโนโลยีเพื่อกอบกู้โลก</p>
+</div>
+{% endblock contant %}

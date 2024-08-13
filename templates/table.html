@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+<!---->
+{% block contant %}
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+        <th scope="col">FREE</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in list %}
+      <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>title</td>
+        <td>name</td>
+        <td>aaaaa</td>
+        <td>Thanabordee</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock contant %}
